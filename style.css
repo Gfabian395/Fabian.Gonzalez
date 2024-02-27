@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+body {
+    background: url(./image/asus.jpg) no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: right;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.box {
+    width: 600px;
+    background: rgb(0, 0, 0, .8);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.box-img {
+    border-radius: 50%;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 30px 0 20px;
+}
+
+.box h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.box p {
+    text-align: justify;
+}
+
+.box ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.box ul li {
+    display: inline-block;
+}
+
+.box ul li a {
+    color: white;
+    font-size: 45px;
+    padding: 10px 25px;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+
+/*ICONOS*/
+.redes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+}
+
+.icon:hover {
+    background-color: #80bfff;
+    box-shadow: 0 0 20px #80bfff;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #0000ff;
+    box-shadow: 0 0 20px #0000ff;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #ecab0f;
+    box-shadow: 0 0 20px #ecab0f;
+}
+
+.icon svg {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
